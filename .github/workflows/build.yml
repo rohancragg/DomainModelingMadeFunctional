@@ -16,4 +16,6 @@ jobs:
     - name: Build script
       uses: jdickey/bash@v.1.1.1
       with:
-        args: "build.sh"
+        args: |
+          "echo $OS"
+          "ls -al"
