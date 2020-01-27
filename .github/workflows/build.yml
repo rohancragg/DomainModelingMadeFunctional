@@ -13,6 +13,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
-    - name: Bash Command Lines for GitHub Actions
-      uses: "jdickey/bash@master"
-      args: ["./build.sh"]
+    - name: Build script
+      uses: jdickey/bash@v.1.1.1
+      with:
+        args: "./build.sh"
